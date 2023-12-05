@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Anti Virus Project", "Anti Virus Project\Anti Virus Project.vbproj", "{FA14F0C6-3AD6-41D3-8BAF-8D9E1A8AEF2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CONTROLS", "CONTROLS", "{A5A6E9DB-1129-4BD9-97AA-2CFF00192DAB}"
+	ProjectSection(SolutionItems) = preProject
+		Anti Virus Project\CtlHome.Designer.vb = Anti Virus Project\CtlHome.Designer.vb
+		Anti Virus Project\CtlHome.resx = Anti Virus Project\CtlHome.resx
+		Anti Virus Project\CtlHome.vb = Anti Virus Project\CtlHome.vb
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA14F0C6-3AD6-41D3-8BAF-8D9E1A8AEF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA14F0C6-3AD6-41D3-8BAF-8D9E1A8AEF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA14F0C6-3AD6-41D3-8BAF-8D9E1A8AEF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA14F0C6-3AD6-41D3-8BAF-8D9E1A8AEF2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A73732F4-3772-4331-9917-9B6F60FF13B1}
+	EndGlobalSection
+EndGlobal

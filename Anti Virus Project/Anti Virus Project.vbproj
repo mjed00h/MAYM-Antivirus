@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA14F0C6-3AD6-41D3-8BAF-8D9E1A8AEF2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Anti_Virus_Project.My.MyApplication</StartupObject>
+    <RootNamespace>Anti_Virus_Project</RootNamespace>
+    <AssemblyName>Anti Virus Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Anti Virus Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Anti Virus Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtlClose.Designer.vb">
+      <DependentUpon>CtlClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlClose.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlHome.Designer.vb">
+      <DependentUpon>CtlHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlHome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlPrivacy.Designer.vb">
+      <DependentUpon>CtlPrivacy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlPrivacy.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlProtection.Designer.vb">
+      <DependentUpon>CtlProtection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlProtection.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlScan.Designer.vb">
+      <DependentUpon>ctlScan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlScan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlSettings.Designer.vb">
+      <DependentUpon>CtlSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlSettings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUSTUM CONTROLS\CirclePanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CUSTUM CONTROLS\CustomSwitch.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClose.Designer.vb">
+      <DependentUpon>frmClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUSB.Designer.vb">
+      <DependentUpon>frmUSB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUSB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUNCTIONS\AllFunctions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="test.Designer.vb">
+      <DependentUpon>test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_software.Designer.vb">
+      <DependentUpon>update_software.vb</DependentUpon>
+    </Compile>
+    <Compile Include="update_software.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Virus Cheast.Designer.vb">
+      <DependentUpon>Virus Cheast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virus Cheast.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtlClose.resx">
+      <DependentUpon>CtlClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlHome.resx">
+      <DependentUpon>CtlHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlPrivacy.resx">
+      <DependentUpon>CtlPrivacy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlProtection.resx">
+      <DependentUpon>CtlProtection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlScan.resx">
+      <DependentUpon>ctlScan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlSettings.resx">
+      <DependentUpon>CtlSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClose.resx">
+      <DependentUpon>frmClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUSB.resx">
+      <DependentUpon>frmUSB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_software.resx">
+      <DependentUpon>update_software.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virus Cheast.resx">
+      <DependentUpon>Virus Cheast.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\icons8_padlock_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_fingerprint_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_fingerprint_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_fingerprint_35px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_fingerprint_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_protect_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_padlock_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_dashboard_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_protect_45px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_virus_research_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_computer_virus_45px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_info_45px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_protect_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bggg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_warning_shield_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
